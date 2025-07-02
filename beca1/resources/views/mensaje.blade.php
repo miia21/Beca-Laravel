@@ -6,6 +6,8 @@
     <title>Mensaje</title>
 </head>
 <body>
-    
+    <h1>Mensaje para {{ $nom }}</h1>
+    <p>holaa puto</p>
+
 </body>
 </html>

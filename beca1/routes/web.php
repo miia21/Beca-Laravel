@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\PrimerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,11 +17,11 @@ Route::get('/mensaje', function(){
 // Crear controlador
 // Devolver informacion a diferentes vistas
 
-Route::get('/controlador1', [PrimerController::class, '']);
+Route::get('/controlador1', [PrimerController::class, 'inicio']);
 
-Route::get('/controlador2', [PrimerController::class, '']);
+// Route::get('/controlador2', [PrimerController::class, '']);
 
-Route::get('/controlador3', [PrimerController::class, '']);
+// Route::get('/controlador3', [PrimerController::class, '']);
 
 // Tarea 🤓
 
