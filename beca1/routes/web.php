@@ -19,9 +19,7 @@ Route::get('/mensaje', function(){
 
 Route::get('/controlador1', [PrimerController::class, 'inicio']);
 
-// Route::get('/controlador2', [PrimerController::class, '']);
-
-// Route::get('/controlador3', [PrimerController::class, '']);
+Route::get('/controlador2', [PrimerController::class, 'info']);
 
 // Tarea 🤓
 

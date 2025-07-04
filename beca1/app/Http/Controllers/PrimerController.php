@@ -11,5 +11,14 @@ class PrimerController extends Controller
         return view ('mensaje', ['nom' => 'Alejo']);
     }
 
+    public function info(){
+        $datos = [
+            'nom' => 'Mia',
+            'edad' => '21',
+            'local' => 'Pocito'
+        ];
+        return view ('mensaje', $datos);
+    }
+
 
 }
