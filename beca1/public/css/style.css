@@ -5,18 +5,21 @@ html, body {
     flex-direction: column;
 }
 
-header{
+header {
     background-color: #240224;
+    color: white;
     align-items: center;
     display: flex;
     height: 80px;
+    padding: 0 20px;
 }
 
 main {
     flex: 1;
+    padding: 2rem 1rem;
 }
 
-footer{
+footer {
     background-color: #240224;
     color: white;
     display: flex;
@@ -24,4 +27,24 @@ footer{
     align-items: center;
     height: 100px;
     width: 100%;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #240224;
+    color: white;
 }

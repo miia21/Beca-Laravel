@@ -10,18 +10,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    @include('sections.header')
+
+    @include('sections.header', ['titulo' => 'Info'])
+
     <main class="container">
+        
         @if(isset ($nom))
-            <h1>Mensaje para {{ $nom }}</h1>
+            <h1>Mensaje para {{$nom}}</h1>
             <p>holaa cómo estás?</p>
         @else
             <p>hola extraño</p>
         @endif
-        <h1>Tus datos</h1>
-        <p>Edad: {{$edad}}</p>
-        <p>Localidad: {{$local}}</p>
+
+        @if(isset($edad) && isset($local))
+            <h2>Tus datos</h2>
+            <p><strong>Edad:</strong> {{$edad}}</p>
+            <p><strong>Localidad:</strong> {{$local}}</p>
+        @else
+            <h2>No tenemos tus datos</h2>
+        @endif
+        
     </main>
+
     @include('sections.footer')
+
 </body>
 </html>
